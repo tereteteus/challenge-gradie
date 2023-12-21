@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css"> <!--MOBILE FIRST-->
+    <link rel="stylesheet" href="estilos/mediaquery.css"> <!--OUTRAS MIDIAS-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+    </style>
+    <title>Gradie Login Page</title>
+</head>
+<body>
+    <main>
+        <section id="gradie">
+            <h1>Gradie</h1>
+            <p>Beautiful gradients in seconds.</p>
+            <!--IMAGEM-->
+        </section>
+        <section id="login">
+            <h1>Login</h1>
+            <form action="infos.php" method="post" autocomplete="on">
+
+               <label for="iusu">Email</label> 
+               <div class="campo">
+                    <input type="email" name="usu" id="iusu" required placeholder="fulano@email.com">
+                </div>
+
+                <label for="ipas">Senha</label>
+                <div class="campo">
+                    <input type="password" name="pas" id="ipas" minlength="8" required placeholder="Ao menos 8 caracteres">
+                </div>
+
+                <div class="termos">
+                    <input type="checkbox" name="term" id="iterm" required>
+                    <label for="iterm">Ao criar uma conta, você concorda com os <a href="https://youtu.be/r0ahERY9kb0?si=ExEMNQvTHFEY9qkc" target="_blank">termos e condições.</a></label>
+                </div>
+
+                <input type="submit" value="Criar uma conta">
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>

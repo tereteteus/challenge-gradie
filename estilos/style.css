@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/*---MOBILE FIRST---*/
+
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        width: 100vw;
+    }
+
+/*---FULL BODY---*/
+
+    main {
+        transition: width 0.3s, height 0.3s;
+        transition-timing-function: ease;
+
+        height: 100vh;
+        width: 100vw;
+    }
+
+/*---GRADIE CONTAINER---*/
+
+    section#gradie {
+        display: flex;
+        flex-direction: column;
+
+        background: #21515e url(../imagens/iPhone-Mockup.png);
+        background-size: 500px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        padding: 40px;
+        height: 600px;
+        text-align: center;
+        color: white;
+    }
+    
+    /*---title*/
+    section#gradie > h1 {
+        font-size: 2em;
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+
+    section#gradie > p {
+        font-size: 1.2em;
+        font-weight: 300;
+        color: #7dcbd5;
+    }
+
+/*---LOGIN CONTAINER---*/
+
+    /*---content*/
+    section#login {
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        
+        box-sizing: border-box;
+        background-color: white;
+        padding: 80px;
+        height: 500px;
+    }
+
+    /*---title*/
+    section#login > h1 {
+        color: rgb(37, 37, 37);
+        padding-bottom: 20px;
+        font-weight: 500;
+        font-size: 2em;
+    }
+
+    /*---forms and labels*/
+    section#login > form > label {
+        display: block;
+        font-size: 0.9em;
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+
+    div.campo {
+        display: block;
+        font-size: 1em;
+        font-weight: 300;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    div.campo > input {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid rgb(171, 171, 171);
+        padding: 10px;
+    }
+
+    div.termos {
+        display: flex;
+        align-items: flex-start;
+        font-size: 1em;
+        font-weight: 300;
+        padding-bottom: 20px;
+    }
+
+    div.termos > input {
+        float: left;
+    }
+
+    div.termos > label {
+        margin-left: 15px;
+    }
+
+    div.termos > label > a {
+        color: #21515e;
+        font-weight: 500;
+    }
+
+    div.termos > label > a:hover {
+        color: #337385;
+    }
+
+    /*---input button*/
+    input[type=submit] {
+        display: block;
+
+        width: 100%;
+        height: 50px;
+        background-color: #21515e;
+        border: none;
+        border-radius: 5px;
+
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    input[type=submit]:hover {
+        background-color: #337385;
+        cursor: pointer;
+    }
